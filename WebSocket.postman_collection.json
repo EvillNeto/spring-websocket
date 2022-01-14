@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "6aaeebe7-1659-4af3-b6ec-e70078b880aa",
+		"name": "WebSocket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\":\"{{$randomLoremWord}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/ws/message",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"ws",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
